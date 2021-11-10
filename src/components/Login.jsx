@@ -4,11 +4,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { ErrorMessage } from "@hookform/error-message";
 import axios from 'axios'
-import Face from './assets/Vector.png'
-import Google from './assets/Google.png'
 import Logo from './assets/LOGOHORIZONTALNEGATIVO1.png'
+import Google from './assets/Google.png'
+import Face from './assets/Vector.png'
 import Img from './assets/Img.png'
+import By from './assets/logoSA.png'
 import style from './Login.module.css';
+
 import { Container, Col, Row, Modal, Button } from "react-bootstrap";
 
 const Login = () => {
@@ -91,6 +93,10 @@ const Login = () => {
                                     <p className={style.Help}>Ajuda</p>
                                 </div>
                                 <img className={style.Img} src={Img} alt="ImageIlustrator" />
+                                <div className={style.RowDown}>
+                                    <p className={style.About}>© 2021, Projetolist</p>
+                                    <p className={style.About}>UI/UX Design and Front-end by:<img src={By} className={style.ImgBy} alt="Author"/></p>
+                                </div>
                             </Col>
                         </div>
                     </Col>
